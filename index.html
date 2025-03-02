@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Kids - Tracing & Phonics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ABC Kids - Tracing & Phonics</h1>
+        <p>เรียนรู้ตัวอักษรและเสียงสนุกๆ สำหรับเด็กๆ!</p>
+    </header>
+    
+    <section class="main-content">
+        <button class="activity-button" onclick="startTracing()">เริ่มฝึกเขียน</button>
+        <button class="activity-button" onclick="startPhonics()">เริ่มฟังเสียง</button>
+    </section>
+
+    <div id="tracing-container" style="display:none;">
+        <canvas id="tracing-canvas" width="400" height="200"></canvas>
+        <button onclick="clearCanvas()">ลบ</button>
+    </div>
+
+    <div id="phonics-container" style="display:none;">
+        <h2>ฟังเสียงตัวอักษร</h2>
+        <button onclick="playSound('A')">A</button>
+        <button onclick="playSound('B')">B</button>
+        <button onclick="playSound('C')">C</button>
+    </div>
+
+    <footer>
+        <p>© 2025 ABC Kids - สื่อการเรียนรู้สำหรับเด็ก</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
